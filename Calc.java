@@ -2,8 +2,10 @@ import java.util.Scanner;
 
 public class Calc {
 
+    private static Scanner scan;
+
     static public void main(String[] arg) {
-        Scanner scan = new Scanner(System.in);
+        scan = new Scanner(System.in);
 
         Numero n1 = new Numero();
         Numero n2 = new Numero();
@@ -19,7 +21,7 @@ public class Calc {
             res.setValor(n1.getValor() + n2.getValor());
 
             System.out.printf("%nA soma de %d com %d e igual a %d %n ", n1.getValor(), n2.getValor(), res.getValor());
-            System.out.printf("%Deseja somar outro valor? aperte 'S'para sim");
+            System.out.printf("%nDeseja somar outro valor? aperte 'S'para sim %n");
             opc = scan.next();
             System.out.printf("%n%n%n");
 
